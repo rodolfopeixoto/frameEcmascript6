@@ -63,8 +63,13 @@
 
     <script>
       var n1 = new Negociacao(new Date, 3, 700);
-      var volume = n1.obtemVolume();
-      console.log(volume);
+
+      console.log(Object.isFrozen(n1));
+      n1._quantidade = 111111000;
+      console.log(n1.quantidade);
+      console.log(n1.valor);
+      console.log(n1.data);
+      console.log(n1.volume);
     </script>
 
 </body>
