@@ -4,7 +4,5 @@
 let numeros = [3,2,11,20,8,7];
 
 let newList = numeros
-              .map(function(item){
-                 if( (item % 2) != 0 ) return item * 2;
-                 return item;
-              });
+              .map(item => item % 2 ? item * 2 : item
+              );
