@@ -12,7 +12,6 @@ class NegociacaoController {
    adiciona(event){
      event.preventDefault();
 
-     console.log(typeof(this._inputData.value));
 
      let data = new Date(...
          this._inputData.value
@@ -21,15 +20,14 @@ class NegociacaoController {
 
      );
 
-     console.log(data);
 
-    // let negociacao = new Negociacao(
-    //   this._inputData.value,
-    //   this._inputQuantidade.value,
-    //   this._inputValor.value
-    // );
+    let negociacao = new Negociacao(
+      data,
+      this._inputQuantidade.value,
+      this._inputValor.value
+    );
 
-      // console.log(negocicao);
+      console.log(negociacao);
       //Adicionar a negocicaco em uma lista
 
    }
