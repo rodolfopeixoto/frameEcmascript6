@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Probela do Silvio</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>Salário</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <!-- ELE ESTÁ COM DIFICULDADES AQUI -->
+        <tbody>
+    </table>
+
+    <script>
+        let funcionarios = [
+            {
+                "nome": "Douglas",
+                "endereco" : "Rua da esquina, 123",
+                "salario" : "4500"
+            },
+            {
+                "nome": "Felipe",
+                "endereco" : "Rua da virada, 456",
+                "salario" : "5000"
+            },
+            {
+                "nome": "Silvio",
+                "endereco" : "Rua da aresta, 789",
+                "salario" : "6000"
+            }
+        ];
+
+        let funcionariosHTML = funcionarios.map(f => `
+             <tr>
+              <td>${f.nome}</td>
+              <td>${f.endereco}</td>
+              <td>${f.salario}</td>
+             </tr>
+
+            `);
+
+       let htmlConcatenado = funcionariosHTML.join('');
+       let tabela = document.querySelector("tbody");
+       tabela.innerHTML = htmlConcatenado;
+
+    </script>
+</body>
+</html>
+
+<!--
+Silvio, um funcionário da empresa Argentum, foi encarregado de desenvolver uma aplicação que é responsável por imprimir todos os dados dos funcionários da empresa. Ele queria economizar tempo e em vez de desenvolver todo um software para se comunicar com a impressora e gerar o relatório pedido, ele resolveu aproveitar-se da famosa opção de imprimir que todo browser tem. Sendo assim, basta ele gerar dinamicamente um HTML e imprimi-lo!
+Este foi seu plano:
+
+1- Criar um array com todos os funcionários da empresa. Se novos funcionários entrarem, basta adicioná-los no array.
+
+2- Gerar uma tabela em HTML e preenchê-la com os dados desse array.
+
+3- Utilizar o próprio browser para imprimir a página HTML gerada dinamicamente com os dados do relatório da tabela.
+
+A tabela que ele montou tem esta cara: -->
