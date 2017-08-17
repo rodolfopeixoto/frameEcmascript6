@@ -1,4 +1,4 @@
-# rogpe REGexp - [ BOLSA rogpe ]
+# rogpe [ BOLSA rogpe ]
 
 Desenvolvimento de um mini lib igual ao React ou AngularJS para SPAs com Javascript.
 
