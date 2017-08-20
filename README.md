@@ -66,6 +66,9 @@ Mais informações sobre o objeto XMLHttpRequest no da Mozilla Developer Network
 
 ##### Promise
 
+Promises (promessas) agora fazem parte da linguagem JavaScript a partir do ES6. Elas representam o resultado futuro de uma ação, que pode ser de sucesso ou fracasso. Elas visam tornar códigos assíncronos mais legíveis e fáceis de manter, evitando o Callback Hell. Uma ou outra chamada assíncrona não é problemática, o problema é quando temos uma sucessão de chamadas assíncronas e o modo tradicional de lidar com elas, aninhando callbacks, torna o código difícil de ler e manter, principalmente o tratamento de erros.
+
+
 ```
 
 
